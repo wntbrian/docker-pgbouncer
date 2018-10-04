@@ -1,4 +1,4 @@
-FROM        debian:jessie
+FROM        debian:latest
 MAINTAINER  Kotaimen <kotaimen.c@gmail.com>
 
 ENV         DEBIAN_FRONTEND noninteractive
@@ -11,5 +11,5 @@ RUN         set -x \
 
 ADD         entrypoint.sh ./
 
-EXPOSE      6432
+EXPOSE      6543
 ENTRYPOINT  ["./entrypoint.sh"]
