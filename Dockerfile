@@ -11,5 +11,5 @@ RUN         set -x \
 
 ADD         entrypoint.sh ./
 
-EXPOSE      6432
+EXPOSE      6543
 ENTRYPOINT  ["./entrypoint.sh"]
